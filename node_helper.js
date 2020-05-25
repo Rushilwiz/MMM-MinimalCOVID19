@@ -1,6 +1,8 @@
 var NodeHelper = require("node_helper")
 
 module.exports = NodeHelper.create({
-  start: function() {},
+  start: function() {
+    this.countDown = 10000000
+  },
   socketNotificationReceived: function(notification, payload) {},
 })
